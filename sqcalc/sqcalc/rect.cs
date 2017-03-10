@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace sqcalc
 {
-    abstract public class acl
+    class rect : acl
     {
-        public double x;
-        public double y;
-
-        public acl(double x, double y)
+        public rect(double x, double y) : base (x, y)
         {
             this.x = x;
-            this.y = y;
+            this.x = y;
         }
 
-        abstract public double square();
+        public override double square()
+        {
+            return x * y;
+        }
     }
 }

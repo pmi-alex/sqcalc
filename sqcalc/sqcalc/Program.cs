@@ -10,7 +10,11 @@ namespace sqcalc
     {
         static void Main(string[] args)
         {
-
+            acl sq = new acl();
+            double a = 0, b = 0;
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            sq.square(a, b);
         }
     }
 }
