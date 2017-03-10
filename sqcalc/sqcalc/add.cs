@@ -8,6 +8,6 @@ namespace sqcalc
 {
     class add
     {
-
+        //add figure
     }
 }
