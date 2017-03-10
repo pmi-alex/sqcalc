@@ -11,11 +11,12 @@ namespace sqcalc
         static void Main(string[] args)
         {
             double a = 0, b = 0, s = 0;
-            rect rt = new rect(a, b);
             a = Convert.ToDouble(Console.ReadLine());
             b = Convert.ToDouble(Console.ReadLine());
+            rect rt = new rect(a, b, a, b);
             s = rt.square();
             Console.WriteLine(s);
+            Console.ReadLine();
         }
     }
 }

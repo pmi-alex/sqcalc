@@ -8,15 +8,18 @@ namespace sqcalc
 {
     class rect : acl
     {
-        public rect(double x, double y) : base (x, y)
+        public double w { get; set; }
+        public double h { get; set; }
+
+        public rect(double x, double y, double h, double w) : base (x, y)
         {
-            this.x = x;
-            this.x = y;
+            this.w = w;
+            this.h = h;
         }
 
         public override double square()
         {
-            return x * y;
+            return w * h;
         }
     }
 }
